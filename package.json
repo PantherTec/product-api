@@ -1,7 +1,7 @@
 {
   "name": "practice",
   "version": "1.0.0",
-  "description": "simple api for issuing traffic tickets",
+  "description": "An api for products",
   "main": "app.js",
   "author": "",
   "license": "ISC",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:tilte/core-svc.git"
+    "url": "git@https://github.com/PantherTec/product-api"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
@@ -39,6 +39,8 @@
     "morgan": "^1.9.0",
     "mysql2": "^1.5.3",
     "node-fetch": "^1.7.3",
+    "pg": "^7.6.0",
+    "pg-hstore": "^2.3.2",
     "sequelize": "^4.8.0",
     "sequelize-cli": "^4.0.0",
     "spdy": "^3.4.7",
@@ -56,5 +58,4 @@
   "engines": {
     "node": "10.0.0"
   }
-
 }

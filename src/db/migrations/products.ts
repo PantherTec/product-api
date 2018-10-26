@@ -1,5 +1,7 @@
+import { QueryInterface, SequelizeStatic } from "sequelize";
 module.exports = {
-  up: (queryInterface, Sequelize) => {
+  // tslint:disable-next-line:variable-name
+  up: async (queryInterface: QueryInterface, Sequelize: SequelizeStatic) => {
     return queryInterface.createTable("products", {
       id: {
         type: Sequelize.INTEGER,
@@ -43,8 +45,7 @@ module.exports = {
       }
     });
   },
-
-  down(queryInterface) {
+  down: async (queryInterface: QueryInterface, Sequelize: SequelizeStatic) => {
     return queryInterface.dropTable("products");
   }
 };
